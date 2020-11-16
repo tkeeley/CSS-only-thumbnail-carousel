@@ -1,0 +1,113 @@
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<style>
+p {
+  color: #9f9f9f;
+  text-align: center;
+  padding: 20px 0;
+}
+
+span {
+  color: #666666;
+  margin-left: 20px;
+}
+
+ img {
+  display: block;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row; 
+  justify-content: center; 
+  align-items: center;
+  margin: 0 auto;
+  
+}
+
+.gallery {
+  max-height: 600px;
+  overflow-y: hidden;
+}
+
+.gallery img {
+  max-height: 500px;
+}
+
+.row {
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+a.active, a:focus, a:hover, a:focus-within {
+  filter: contrast(50%);
+}
+
+@media only screen and (max-width: 732px) {
+  .gallery img {
+    padding: 0;
+    height: 510px;
+    max-height: 600px;
+    width: 100%;
+  }
+}
+
+/* Overlay on filler image to see it changed */
+#image-2 {
+  filter: contrast(20%);
+}
+#image-3 {
+  filter: contrast(40%);
+}
+#image-4 {
+  filter: contrast(60%);
+}
+#image-5 {
+  filter: contrast(80%);
+}
+</style>
+  
+    <div class="gallery">
+      <img id="image-1" src="http://fpoimg.com/1195x768" />
+      <p>First Image<span>Description of image</span></p>
+      <img id="image-2" src="http://fpoimg.com/1195x768" />
+      <p>Second Image<span>Description of image</span></p>
+      <img id="image-3" src="http://fpoimg.com/1195x768" />
+      <p>Third Image<span>Description of image</span></p>
+      <img id="image-4" src="http://fpoimg.com/1195x768" />
+      <p>Fourth Image<span>Description of image</span></p>
+      <img id="image-5" src="http://fpoimg.com/1195x768" />
+      <p>Fifth Image<span>Description of image</span></p>
+    </div>
+
+    <div class="flex-container">
+      <div class="row">
+        <a href="#image-1">
+          <img class="thumb_img" src="http://fpoimg.com/200x200" />
+        </a>
+        <a href="#image-2">
+          <img class="thumb_img" src="http://fpoimg.com/200x200" />
+        </a>
+        <a href="#image-3">
+          <img class="thumb_img" src="http://fpoimg.com/200x200" />
+        </a>
+        <a href="#image-4">
+          <img class="thumb_img" src="http://fpoimg.com/200x200" />
+        </a>
+        <a href="#image-5">
+          <img class="lthumb_img" src="http://fpoimg.com/200x200" />
+        </a>
+      </div>
+  </div>
+
+    
+
+ 
